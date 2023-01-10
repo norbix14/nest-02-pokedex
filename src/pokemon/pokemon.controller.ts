@@ -1,3 +1,5 @@
+// import { HttpCode } from '@nestjs/common/decorators';
+// import { HttpStatus } from '@nestjs/common/enums';
 import { PokemonService } from './pokemon.service';
 import {
   Body,
@@ -15,6 +17,7 @@ export class PokemonController {
   constructor(private readonly pokemonService: PokemonService) {}
 
   @Post()
+  // @HttpCode(HttpStatus.OK)
   create(@Body() createPokemonDto: CreatePokemonDto) {
     return this.pokemonService.create(createPokemonDto);
   }

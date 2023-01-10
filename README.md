@@ -19,8 +19,9 @@
     <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
   <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
 </p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+
+[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
+[![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)
 
 ## Description
 
@@ -28,34 +29,74 @@
 
 ## Installation
 
+### Clone the repository
+
+Using gh **CLI**
+
 ```bash
-$ yarn install
+gh repo clone norbix14/nest-02-pokedex pokedex
 ```
+
+### Go to folder
+
+```bash
+cd pokedex
+```
+
+### Install NEST CLI
+
+```bash
+yarn i -g @nestjs/cli
+```
+
+### Install dependencies
+
+```bash
+yarn install
+```
+
+## Set database
+
+Read **[this](./DOCKERIZE.md 'Dockerize app')** to dockerize app.
 
 ## Running the app
 
+* Development
+
 ```bash
-# development
-$ yarn run start
-
-# watch mode
-$ yarn run start:dev
-
-# production mode
-$ yarn run start:prod
+yarn run start
 ```
 
-## Test
+* Watch mode
 
 ```bash
-# unit tests
-$ yarn run test
+yarn run start:dev
+```
 
-# e2e tests
-$ yarn run test:e2e
+* Production mode
 
-# test coverage
-$ yarn run test:cov
+```bash
+yarn run start:prod
+```
+
+## Tests
+
+* Unit tests
+
+```bash
+yarn run test
+```
+
+* e2e tests
+
+```bash
+yarn run test:e2e
+```
+
+* Test coverage
+
+```bash
+yarn run test:cov
 ```
 
 ## Support
@@ -64,9 +105,9 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 
 ## Stay in touch
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+* Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
+* Website - [https://nestjs.com](https://nestjs.com/)
+* Twitter - [@nestframework](https://twitter.com/nestframework)
 
 ## License
 

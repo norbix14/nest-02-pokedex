@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  db:
+    image: mongo:5
+    restart: always
+    volumes:
+      - ./mongo:/data/db
+    environment:
+      MONGODB_DATABASE: fhnestpokedex
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: root
+    ports:
+      - 27017:27017
+    # networks:
+      # - backend
