@@ -1,3 +1,4 @@
+import { CommonModule } from './common/common.module';
 import { Module } from '@nestjs/common';
 import { MongooseModule } from '@nestjs/mongoose';
 import { PokemonModule } from './pokemon/pokemon.module';
@@ -15,6 +16,7 @@ const MONGO_URL =
     }),
     MongooseModule.forRoot(MONGO_URL),
     PokemonModule,
+    CommonModule,
   ],
   providers: [],
 })

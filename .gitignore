@@ -37,3 +37,8 @@ lerna-debug.log*
 
 # Environments
 .env
+
+# db data local
+/data
+/mongodb
+/mongo
